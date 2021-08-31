@@ -1,0 +1,31 @@
+<header>AddInteraction</header>
+
+<form (ngSubmit)="addInteraction()" #addClientForm="ngForm">
+
+    <div>
+        <label>ClientId: </label>
+        <input class="form-control" id="clientId" name="clientId" [(ngModel)]="interaction.clientId">
+    </div>
+    <div>
+        <label>EmployeeId: </label>
+        <input class="form-control" id="empId" name="empId" [(ngModel)]="interaction.empId">
+    </div>
+    <div>
+        <label>Interaction Type: </label>
+        <input class="form-control" id="intType" name="intType" [(ngModel)]="interaction.intType">
+    </div>
+    <div>
+        <label>Interaction Time: </label>
+        <input class="form-control" id="intDate" name="intDate" [(ngModel)]="interaction.intDate">
+    </div>
+
+    <div>
+        <label>Remarks </label>
+        <input class="form-control" id="remarks" name="remarks" [(ngModel)]="interaction.remarks">
+    </div>
+
+    <div>
+        <input type="submit"  value="Submit" />
+    </div>
+
+</form>

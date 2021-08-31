@@ -1,0 +1,15 @@
+<header>Delete Client</header>
+
+<form (ngSubmit)="DeleteClient()" #addClientForm="ngForm">
+
+    <div>
+        <label>Client Id: </label>
+        <input class="form-control" id="Id" name="Id" [(ngModel)]="client.id">
+    </div>
+
+
+    <div>
+        <input type="submit"  value="Submit" />
+    </div>
+
+</form>

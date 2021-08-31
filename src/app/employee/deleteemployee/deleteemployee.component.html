@@ -1,0 +1,14 @@
+<header>Delete Employee</header>
+
+<form (ngSubmit)="deleteEmployee()" #addClientForm="ngForm">
+    <div>
+        <label>EmployeeId: </label>
+        <input class="form-control" id="name" name="name" [(ngModel)]="employee.id">
+    </div>
+
+
+    <div>
+        <input type="submit"  value="Submit" />
+    </div>
+
+</form>

@@ -1,0 +1,26 @@
+<header>Update Employee</header>
+
+<form (ngSubmit)="updateEmployee()" #addClientForm="ngForm">
+    <div>
+        <label>EmployeeId: </label>
+        <input class="form-control" id="name" name="name" [(ngModel)]="employee.id">
+    </div>
+
+    <div>
+        <label>Name: </label>
+        <input class="form-control" id="name" name="name" [(ngModel)]="employee.name">
+    </div>
+    <div>
+        <label>password: </label>
+        <input class="form-control" id="password" name="password" [(ngModel)]="employee.password">
+    </div>
+    <div>
+        <label>designation: </label>
+        <input class="form-control" id="Designation" name="Designation" [(ngModel)]="employee.designation">
+    </div>
+
+    <div>
+        <input type="submit"  value="Submit" />
+    </div>
+
+</form>

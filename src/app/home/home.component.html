@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-6 border border-primary">
+        <table class="table table-striped">
+            <thead>
+                <h1>Client List</h1>
+            </thead>
+
+            <th scope="row" class="text-center">Client Name</th>
+            <tr *ngFor="let client of clients">
+                <a [routerLink]="['/clients',client.id]">
+                    <td class="d-flex justify-content-center">{{client.name}}</td>
+                </a>
+
+            </tr>
+        </table>
+    </div>
+    <div class="col-6 border border-danger ">
+        <table class="table table-striped">
+            <thead>
+                <h1>Employee List</h1>
+            </thead>
+            <th scope="row" class="text-center">Employee Name</th>
+            <tr class=" " *ngFor="let employee of employees">
+                <a [routerLink]="['/employees',employee.id]">
+                    <td class="d-flex justify-content-center">{{employee.name}}</td>
+                </a>
+
+            </tr>
+        </table>
+
+    </div>
+</div>

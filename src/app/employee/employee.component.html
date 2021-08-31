@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ClientName</th>
+            <th scope="col">Interaction Type</th>
+            <th scope="col">Interaction Time</th>
+            <th scope="col">Remarks</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let interaction of getinteractionfromemployees">
+
+            <td>{{interaction.clientName}}</td>
+            <td *ngIf="interaction.intType=='T'">Telephone</td>
+            <td *ngIf="interaction.intType=='S'">Skype</td>
+            <td *ngIf="interaction.intType=='I'">In person</td>
+            <td *ngIf="interaction.intType=='W'">Webex</td>
+            <td>{{interaction.intDate}}</td>
+            <td>{{interaction.remarks}}</td>
+
+        </tr>
+    </tbody>
+</table>

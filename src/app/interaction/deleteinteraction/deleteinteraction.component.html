@@ -1,0 +1,14 @@
+<header>Delete Interaction</header>
+
+<form (ngSubmit)="deleteInteraction()" #addClientForm="ngForm">
+
+    <div>
+        <label>InteractionId: </label>
+        <input class="form-control" id="id" name="id" [(ngModel)]="interaction.id">
+    </div>
+
+    <div>
+        <input type="submit"  value="Submit" />
+    </div>
+
+</form>

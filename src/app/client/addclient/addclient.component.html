@@ -1,0 +1,26 @@
+<header>AddClient</header>
+
+<form (ngSubmit)="addClient()" #addClientForm="ngForm">
+
+    <div>
+        <label>Name: </label>
+        <input class="form-control" id="name" name="name" [(ngModel)]="client.name">
+    </div>
+    <div>
+        <label>Email: </label>
+        <input class="form-control" id="email" name="email" [(ngModel)]="client.email">
+    </div>
+    <div>
+        <label>Phone: </label>
+        <input class="form-control" id="phones" name="phones" [(ngModel)]="client.phones">
+    </div>
+    <div>
+        <label>Address: </label>
+        <input class="form-control" id="address" name="address" [(ngModel)]="client.address">
+    </div>
+
+    <div>
+        <input type="submit"  value="Submit" />
+    </div>
+
+</form>
